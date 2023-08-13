@@ -206,10 +206,10 @@ li a:hover {
 }
 @media (max-width: 32rem) {
   html {
-    font-size: 20%;
+    font-size: 24%;
   }
   .footer {
-    bottom: 120.7rem;
+    bottom: 80.7rem;
     width: 142.7rem;
   }
   .last {
