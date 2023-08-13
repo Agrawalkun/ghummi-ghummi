@@ -209,8 +209,8 @@ li a:hover {
     font-size: 24%;
   }
   .footer {
-    bottom: 200rem;
-    width: 142.7rem;
+    bottom: 150rem;
+    width: 120.7rem;
   }
   .last {
     padding: 0rem;
@@ -225,5 +225,11 @@ li a:hover {
   .ghummi-logo {
   height: 9.8rem;
   width: 9.8rem;
+  }
+  .heading {
+  font-size: 2.5rem;
+  }
+  li a {
+  font-size: 1.9rem;
   }
 }
