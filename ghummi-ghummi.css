@@ -189,6 +189,10 @@ li a:hover {
     font-size: 62%;
     /* font-weight: bolder; */
   }
+  .footer {
+    bottom: 28rem;
+    width: 145.2rem;
+  }
 }
 @media (max-width: 76.8rem) {
   html {
@@ -196,7 +200,7 @@ li a:hover {
     /* font-weight: bolder; */
   }
   .footer {
-    bottom: 0.5rem;
+    bottom: 37.5rem;
     width: 129.7rem;
   }
 }
@@ -205,7 +209,7 @@ li a:hover {
     font-size: 14%;
   }
   .footer {
-    bottom: 134.7rem;
+    bottom: 152.7rem;
     width: 142.7rem;
   }
   .last {
