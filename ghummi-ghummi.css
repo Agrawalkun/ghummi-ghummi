@@ -1,0 +1,221 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("gummi-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ghummi {
+  /* border: 2px solid black; */
+  padding: 0.3rem;
+  margin: 1.4rem;
+}
+.ghummi-logo {
+  height: 7.8rem;
+  width: 7.8rem;
+  filter: sepia(0%) hue-rotate(0deg) saturate(0%) invert(0%) grayscale(3%)
+    brightness(0.5) contrast(4.5);
+  padding: 0.7rem;
+  margin-left: 2.6rem;
+}
+.heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-left: 1.8rem;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+li {
+  display: inline-block;
+  position: relative;
+  left: 42.8rem;
+  padding: 3.2rem;
+  margin: 1.2rem;
+  margin-top: 0rem;
+}
+li a {
+  color: #070218b8;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  font-family: "Arimo", sans-serif;
+}
+li a:hover {
+  color: #a31313;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+  text-decoration-color: #933a3af2;
+}
+.main-container {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+}
+
+.h1 {
+  margin: 1.4rem;
+  margin-top: -1rem;
+  font-size: 9.5rem;
+  font-weight: bolder;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 0.1rem 0.8rem 0.8rem black;
+  color: #3d223a;
+}
+.box {
+  border: 0.2rem solid #171b2778;
+  height: 10rem;
+  width: 36rem;
+  padding: 3rem;
+  padding-left: 1.9rem;
+  border-radius: 1.4rem;
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 19.4rem;
+}
+.offer {
+  /* border: 2px solid rgb(177 16 16 / 53%); */
+  position: absolute;
+  height: 10.5rem;
+  width: 36.6rem;
+  border-radius: 1.4rem;
+  margin-left: -4.6rem;
+  margin-top: -1.8rem;
+  background-color: rgb(177 16 16 / 53%);
+  color: aliceblue;
+}
+.h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4.1rem;
+  margin-left: 3.7rem;
+  margin-top: 1.5rem;
+}
+.special-offer {
+  font-weight: 400;
+  margin-left: 3.7rem;
+}
+.rs999 {
+  margin-left: 0.3rem;
+  font-weight: bolder;
+}
+.book {
+  position: relative;
+  margin-top: 6.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 4.4rem;
+  letter-spacing: 0.9rem;
+  margin-bottom: 0rem;
+  margin-left: 16.5rem;
+  color: #040314c2;
+}
+.underline {
+  /* border: 2px solid rgb(177 16 16 / 53%); */
+  width: 23.7rem;
+  height: 1.2rem;
+  margin-top: -2.1rem;
+  margin-left: 15.5rem;
+  background-color: rgb(177 16 16 / 53%);
+}
+.world {
+  margin-top: 4rem;
+  margin-left: 18.2rem;
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  font-weight: 100;
+  color: rgb(51 3 3 / 57%);
+}
+.call-icon {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 2.5rem;
+  margin-left: 16.5rem;
+}
+.dial {
+  margin-top: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+}
+.footer {
+  position: absolute;
+  bottom: -16rem;
+  border: 0.2rem solid #a31313;
+  width: 130.6rem;
+  height: 3.8rem;
+  background-color: #a31313;
+  /* right: 2px; */
+}
+.last {
+  /* position: absolute; */
+  margin-bottom: 0rem;
+  padding: 0.7rem;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.icon {
+  position: absolute;
+  right: 9rem;
+  padding: 0.3rem;
+}
+.icon a {
+  padding: 0.3rem;
+}
+.insta {
+  filter: invert(100%);
+}
+.ig {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.fb {
+  height: 3.2rem;
+}
+.twit {
+  height: 2.9rem;
+  width: 2.9rem;
+}
+.wp {
+  height: 2.9rem;
+  width: 2.9rem;
+}
+@media (max-width: 99.8rem) {
+  html {
+    font-size: 62%;
+    /* font-weight: bolder; */
+  }
+}
+@media (max-width: 76.8rem) {
+  html {
+    font-size: 37%;
+    /* font-weight: bolder; */
+  }
+  .footer {
+    bottom: 0.5rem;
+    width: 129.7rem;
+  }
+}
+@media (max-width: 32rem) {
+  html {
+    font-size: 14%;
+  }
+  .footer {
+    bottom: 134.7rem;
+    width: 142.7rem;
+  }
+  .last {
+    padding: 0rem;
+  }
+  .icon {
+    padding: 0rem;
+  }
+  .fb {
+    height: 3.1rem;
+    width: 3.1rem;
+  }
+}
