@@ -33,9 +33,11 @@ body {
   font-weight: bolder;
   font-size: 1.8rem;
 }
+.navbar{
+  margin-left:45rem;
+}
 li {
   display: inline-block;
-  position: relative;
   left: 42.8rem;
   padding: 3.2rem;
   margin: 1.2rem;
