@@ -190,7 +190,7 @@ li a:hover {
     /* font-weight: bolder; */
   }
   .footer {
-    bottom: 0rem;
+    bottom: -11rem;
     width: 132.2rem;
   }
 }
