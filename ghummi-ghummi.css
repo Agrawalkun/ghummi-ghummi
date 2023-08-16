@@ -172,7 +172,7 @@ footer {
 .footer {
   position: absolute;
   border: 0.2rem solid #a31313;
-  width: 136.6rem;
+  width: 136.4rem;
   height: 3.8rem;
   background-color: #a31313;
 }
@@ -386,7 +386,7 @@ label {
     font-size: 5rem;
   }
   .footer {
-    bottom: -15.7rem;
+    bottom: -17.7rem;
     width: 90.9rem;
     position: absolute;
     height: 6rem;
