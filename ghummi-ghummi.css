@@ -6,41 +6,55 @@ html {
   padding: 0rem;
   box-sizing: border-box;
 }
-body {
+.body {
   background-image: url("gummi-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+}
+.travel {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 .ghummi {
   /* border: 2px solid black; */
+  position: relative;
+  top: 0rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0.3rem;
   margin: 1.4rem;
 }
 .ghummi-logo {
+  position: relative;
   height: 7.8rem;
   width: 7.8rem;
   filter: sepia(0%) hue-rotate(0deg) saturate(0%) invert(0%) grayscale(3%)
     brightness(0.5) contrast(4.5);
   padding: 0.7rem;
   margin-left: 2.6rem;
+  margin-top: -4rem;
 }
 .heading {
+  position: absolute;
   font-size: 1.5rem;
   text-align: center;
-  margin-top: -1rem;
+  margin-top: 5rem;
   margin-left: 1.8rem;
   font-family: "Annie Use Your Telescope", cursive;
   font-weight: bolder;
   font-size: 1.8rem;
 }
-.navbar{
-  margin-left:45rem;
+
+ul {
+  margin-left: 33rem;
 }
 li {
   display: inline-block;
-  left: 42.8rem;
-  padding: 3.2rem;
-  margin: 1.2rem;
+  padding: 3rem;
   margin-top: 0rem;
 }
 li a {
@@ -48,23 +62,31 @@ li a {
   font-weight: bolder;
   font-size: 1.8rem;
   font-family: "Arimo", sans-serif;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  transition: 0.3s;
+  transition-property: background;
+}
+li a :not(:last-child) {
+  margin-right: 3rem;
 }
 li a:hover {
   color: #a31313;
+  background: burlywood;
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
   text-decoration-color: #933a3af2;
 }
 .main-container {
   position: absolute;
+  top: 10rem;
   right: 5rem;
   align-items: center;
 }
 
 .h1 {
-  margin: 1.4rem;
-  margin-top: -1rem;
-  font-size: 9.5rem;
+  margin: 1rem;
+  font-size: 8.5rem;
   font-weight: bolder;
   font-family: "Oswald", sans-serif;
   text-shadow: 0.1rem 0.8rem 0.8rem black;
@@ -108,7 +130,7 @@ li a:hover {
 }
 .book {
   position: relative;
-  margin-top: 6.2rem;
+  margin-top: 4.2rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
   font-size: 4.4rem;
@@ -126,7 +148,7 @@ li a:hover {
   background-color: rgb(177 16 16 / 53%);
 }
 .world {
-  margin-top: 4rem;
+  margin-top: 2.7rem;
   margin-left: 18.2rem;
   font-family: "Pacifico", cursive;
   font-size: 5rem;
@@ -136,47 +158,58 @@ li a:hover {
 .call-icon {
   height: 5rem;
   width: 5rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   margin-left: 16.5rem;
 }
 .dial {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
 }
+footer {
+  display: flex;
+}
 .footer {
   position: absolute;
-  bottom: -16rem;
   border: 0.2rem solid #a31313;
   width: 130.6rem;
   height: 3.8rem;
   background-color: #a31313;
-  /* right: 2px; */
 }
 .last {
-  /* position: absolute; */
+  display: flex;
   margin-bottom: 0rem;
   padding: 0.7rem;
   color: aliceblue;
   font-size: 1.5rem;
 }
 .icon {
+  display: flex;
+  align-items: flex-start;
   position: absolute;
   right: 9rem;
   padding: 0.3rem;
+  margin: auto;
 }
 .icon a {
   padding: 0.3rem;
-}
-.insta {
   filter: invert(100%);
+  position: relative;
+  transition: 0.3s;
+  transition-property: transform;
+}
+.icon a:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.icon a:hover {
+  transform: scale(1.2);
 }
 .ig {
   width: 2.7rem;
   height: 2.7rem;
 }
 .fb {
-  height: 3.2rem;
+  height: 3.1rem;
 }
 .twit {
   height: 2.9rem;
@@ -186,52 +219,200 @@ li a:hover {
   height: 2.9rem;
   width: 2.9rem;
 }
+label {
+  display: none;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  position: relative;
+  right: 5rem;
+  top: -0.5rem;
+}
+
+#check {
+  z-index: 3;
+}
+/* responsive style */
 @media (max-width: 99.8rem) {
   html {
     font-size: 62%;
-    /* font-weight: bolder; */
-  }
-  .footer {
-  bottom: -16rem;
-    width: 136rem;
   }
 }
 @media (max-width: 76.8rem) {
   html {
     font-size: 37%;
-    /* font-weight: bolder; */
   }
   .footer {
-    bottom: 37.5rem;
+    bottom: -2.5rem;
     width: 129.7rem;
+    position: absolute;
+    height: 5rem;
+  }
+  .last {
+    padding: 1.2rem;
+    color: aliceblue;
+    font-size: 2rem;
+  }
+  .main-container {
+    top: 19rem;
   }
 }
 @media (max-width: 32rem) {
   html {
-    font-size: 14%;
+    font-size: 25%;
   }
- .footer {
-    bottom: 160.5rem;
-    width: 132.7rem;
-}
   .last {
-    padding: 0rem;
-  }
-  .icon {
-    padding: 0rem;
+    font-size: 2.1rem;
   }
   .fb {
     height: 3.1rem;
     width: 3.1rem;
   }
-  .ghummi-logo {
-  height: 9.8rem;
-  width: 9.8rem;
+  .navbar {
+    display: none;
+  }
+  label {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+  label:hover {
+    color: darksalmon;
+  }
+  label .close-btn {
+    display: none;
+  }
+  #check:checked ~ header .navbar {
+    z-index: 2;
+    position: fixed;
+    background: rgb(173, 57, 28);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    display: block;
+    position: relative;
+    right: 15rem;
+    top: 17rem;
+    margin: 9rem;
+  }
+  #check:checked ~ header .navbar a {
+    font-weight: 900;
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+    letter-spacing: 0.2rem;
+    font-size: 3.4rem;
+  }
+  #check:checked ~ header label .menu-btn {
+    display: none;
+  }
+  #check:checked ~ header label .close-btn {
+    z-index: 2;
+    display: block;
+    position: fixed;
+  }
+  .main-container {
+    top: 22rem;
+  }
+  .container {
+    padding: 0rem;
+    position: relative;
+    top: 6rem;
+    left: 2rem;
+  }
+  .h1 {
+    font-size: 9.5rem;
+  }
+  .box {
+    margin-top: 13rem;
+    margin-left: 6.4rem;
+    height: 15rem;
+    width: 39rem;
+    padding: 5rem;
+    padding-left: 3.9rem;
+  }
+  .offer {
+    margin-left: -7.6rem;
+    margin-top: -1.8rem;
+    height: 13.5rem;
+    width: 40.5rem;
+  }
+  .h2 {
+    font-size: 4.4rem;
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+  .special-offer {
+    margin-left: 4.2rem;
+  }
+  .book {
+    font-size: 6.4rem;
+    margin-left: 16.5rem;
+    color: #040314;
+    margin-top: 4.2rem;
+  }
+  .underline {
+    width: 31.7rem;
+    margin-top: -3.1rem;
+    margin-left: 15.5rem;
+    background-color: rgb(133 11 11 / 95%);
+  }
+  .book-now {
+    margin-right: 15rem;
+    margin-top: 1rem;
+  }
+  .world {
+    margin-top: 4.5rem;
+    margin-left: 2.2rem;
+    font-size: 8.5rem;
+    font-weight: 500;
+    color: rgb(51 3 3 / 74%);
+  }
+  .call-icon {
+    height: 10rem;
+    width: 9rem;
+    margin-top: 7rem;
+    margin-left: -1.5rem;
+  }
+  .dial {
+    margin-top: 8.3rem;
+    font-size: 5rem;
+  }
+  .footer {
+    bottom: -3.7rem;
+    width: 79.9rem;
+    position: absolute;
+    height: 6rem;
+  }
+  .icon {
+    padding: 1rem;
+  }
+  footer {
+    display: flex;
+    position: absolute;
+    bottom: 0rem;
   }
   .heading {
-  font-size: 2.7rem;
+    margin-top: 8rem;
+    margin-left: 2.8rem;
+    font-size: 2rem;
   }
-  li a {
-  font-size: 2.0rem;
+  .ghummi-logo {
+    height: 9.8rem;
+    width: 9.8rem;
+    margin-left: 2.6rem;
+    margin-top: -2rem;
+  }
+  ul {
+    margin-left: 28rem;
   }
 }
+
+
