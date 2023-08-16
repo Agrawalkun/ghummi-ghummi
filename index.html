@@ -16,6 +16,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Archivo+Black&family=Barlow+Condensed:wght@300&family=EB+Garamond&family=Lora:ital@1&family=Oswald:wght@200;400&family=Pacifico&family=Rubik:ital,wght@1,300&display=swap"
         rel="stylesheet">
@@ -25,26 +27,41 @@
 </head>
 
 <body>
-    <header>
-        <div class="travel d-flex flex-row">
-            <div class="ghummi">
-                <img src="ghummi-icon.png" alt="" class="ghummi-logo">
-                <h1 class="heading">
-                    Ghummi-ghummi
-                </h1>
+    <section class="body">
+        <input type="checkbox" id="check">
+        <header>
+
+            <div class="travel d-flex flex-column justify-content-flex-start">
+                <div class="ghummi">
+                    <img src="ghummi-icon.png" alt="" class="ghummi-logo">
+                    <h1 class="heading">
+                        Ghummi-ghummi
+                    </h1>
+                    <!-- </div> -->
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="PACKAGE">PACKAGE</a></li>
+                            <li><a href="ABOUT">ABOUT</a></li>
+                            <li><a href="CONTACT">CONTACT</a></li>
+                        </ul>
+
+                    </nav>
+
+                    <label for="check">
+                        <i class="fas fa-bars menu-btn"></i>
+                        <i class="fas fa-times close-btn"></i>
+                    </label>
+
+                </div>
+
+
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="PACKAGE">PACKAGE</a></li>
-                    <li><a href="ABOUT">ABOUT</a></li>
-                    <li><a href="CONTACT">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+
+        </header>
+    </section>
     <main>
-        <div class="main-container d-flex flex-column ">
+        <div class="main-container d-flex flex-column  ">
             <div class="container">
                 <h1 class="h1">
                     IT IS TIME TO TRAVEL
@@ -88,8 +105,8 @@
                 <a href=""><img src="facebook1.png" alt="" class="insta fb"></a>
                 <a href=""><img src="twitter.png" alt="" class="insta twit"></a>
                 <a href=""><img src="whatsapp.png" alt="" class="insta wp"></a>
-                <div>
-                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
