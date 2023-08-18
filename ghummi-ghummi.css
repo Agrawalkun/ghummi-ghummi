@@ -25,36 +25,32 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem;
   margin: 1.4rem;
 }
 .ghummi-logo {
   position: relative;
-  height: 7.8rem;
-  width: 7.8rem;
+  height: 7.5rem;
+  width: 7.5rem;
   filter: sepia(0%) hue-rotate(0deg) saturate(0%) invert(0%) grayscale(3%)
     brightness(0.5) contrast(4.5);
   padding: 0.7rem;
-  margin-left: 2.6rem;
-  margin-top: -4rem;
+  margin-left: 2rem;
+  margin-top: -5rem;
 }
 .heading {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 5rem;
-  margin-left: 1.8rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
   font-family: "Annie Use Your Telescope", cursive;
   font-weight: bolder;
   font-size: 1.8rem;
 }
 
-ul {
-  margin-left: 33rem;
-}
 li {
   display: inline-block;
-  padding: 3rem;
+  padding: 2rem;
   margin-top: 0rem;
 }
 li a {
@@ -79,14 +75,14 @@ li a:hover {
 }
 .main-container {
   position: absolute;
-  top: 10rem;
+  top: 9rem;
   right: 5rem;
   align-items: center;
 }
 
 .h1 {
   margin: 1rem;
-  font-size: 8.5rem;
+  font-size: 8rem;
   font-weight: bolder;
   font-family: "Oswald", sans-serif;
   text-shadow: 0.1rem 0.8rem 0.8rem black;
@@ -94,35 +90,34 @@ li a:hover {
 }
 .box {
   border: 0.2rem solid #171b2778;
-  height: 10rem;
-  width: 36rem;
+  height: 9rem;
+  width: 34rem;
   padding: 3rem;
   padding-left: 1.9rem;
   border-radius: 1.4rem;
   position: relative;
-  margin-top: 4rem;
-  margin-left: 19.4rem;
+  margin-top: 2.2rem;
+  margin-left: 15rem;
 }
 .offer {
   /* border: 2px solid rgb(177 16 16 / 53%); */
   position: absolute;
-  height: 10.5rem;
-  width: 36.6rem;
+  height: 9.5rem;
+  width: 34.6rem;
   border-radius: 1.4rem;
-  margin-left: -4.6rem;
+  margin-left: -4.3rem;
   margin-top: -1.8rem;
   background-color: rgb(177 16 16 / 53%);
   color: aliceblue;
 }
 .h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 4.1rem;
-  margin-left: 3.7rem;
+  font-size: 4rem;
   margin-top: 1.5rem;
 }
 .special-offer {
   font-weight: 400;
-  margin-left: 3.7rem;
+  margin-left: 3.3rem;
 }
 .rs999 {
   margin-left: 0.3rem;
@@ -130,26 +125,27 @@ li a:hover {
 }
 .book {
   position: relative;
-  margin-top: 4.2rem;
+  margin-top: 3rem;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: bolder;
-  font-size: 4.4rem;
+  font-size: 4rem;
   letter-spacing: 0.9rem;
   margin-bottom: 0rem;
   margin-left: 16.5rem;
   color: #040314c2;
+  padding: 0.3rem;
 }
 .underline {
   /* border: 2px solid rgb(177 16 16 / 53%); */
-  width: 23.7rem;
+  width: 23.5rem;
   height: 1.2rem;
-  margin-top: -2.1rem;
+  margin-top: -2.4rem;
   margin-left: 15.5rem;
   background-color: rgb(177 16 16 / 53%);
 }
 .world {
-  margin-top: 2.7rem;
-  margin-left: 18.2rem;
+  margin-top: 1.5rem;
+  margin-left: 16rem;
   font-family: "Pacifico", cursive;
   font-size: 5rem;
   font-weight: 100;
@@ -160,19 +156,24 @@ li a:hover {
   width: 5rem;
   margin-top: 1.5rem;
   margin-left: 16.5rem;
+  padding: 0.5rem;
+  padding-right: 0rem;
 }
 .dial {
   margin-top: 1.5rem;
   font-family: "Oswald", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0.3rem;
+  padding-left: 0rem;
 }
 footer {
   display: flex;
 }
 .footer {
   position: absolute;
+  bottom: -7.05rem;
   border: 0.2rem solid #a31313;
-  width: 134.2rem;
+  width: 98.9vw;
   height: 3.8rem;
   background-color: #a31313;
 }
@@ -245,8 +246,7 @@ label {
   }
   .footer {
     bottom: -2.5rem;
-    width: 129.7rem;
-    position: absolute;
+    width: 100vw;
     height: 5rem;
   }
   .last {
@@ -257,8 +257,26 @@ label {
   .main-container {
     top: 19rem;
   }
+  .box {
+    margin-top: 15.2rem;
+  }
+  .call-icon {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 13.3rem;
+    margin-left: 41.5rem;
+    padding: 0.5rem;
+    padding-right: 0rem;
+  }
+  .dial {
+    margin-top: 13.5rem;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    padding: 0.3rem;
+    padding-left: 0rem;
+  }
 }
-@media (max-width: 32rem) {
+@media screen and (max-width: 32rem) {
   html {
     font-size: 25%;
   }
@@ -274,7 +292,7 @@ label {
   }
   label {
     display: block;
-    font-size: 2.5rem;
+    font-size: 3rem;
     cursor: pointer;
     transition: 0.3s;
     transition-property: color;
@@ -324,15 +342,16 @@ label {
   .container {
     padding: 0rem;
     position: relative;
-    top: 6rem;
+    top: -10rem;
     left: 2rem;
   }
   .h1 {
     font-size: 9.5rem;
+    margin-left: 3rem;
   }
   .box {
-    margin-top: 13rem;
-    margin-left: 6.4rem;
+    margin-top: -8rem;
+    margin-left: 36.4rem;
     height: 15rem;
     width: 39rem;
     padding: 5rem;
@@ -353,42 +372,43 @@ label {
     margin-left: 4.2rem;
   }
   .book {
-    font-size: 6.4rem;
-    margin-left: 16.5rem;
+    font-size: 5rem;
+    margin-left: 19.5rem;
     color: #040314;
     margin-top: 4.2rem;
   }
   .underline {
-    width: 31.7rem;
-    margin-top: -3.1rem;
-    margin-left: 15.5rem;
+    width: 27rem;
+    margin-top: -2.9rem;
+    margin-left: 18.5rem;
     background-color: rgb(133 11 11 / 95%);
   }
   .book-now {
-    margin-right: 15rem;
-    margin-top: 1rem;
+    margin-right: -31rem;
+    margin-top: 40rem;
   }
   .world {
-    margin-top: 4.5rem;
+    margin-top: 3.5rem;
     margin-left: 2.2rem;
     font-size: 8.5rem;
     font-weight: 500;
     color: rgb(51 3 3 / 74%);
+    margin-bottom: -3rem;
   }
   .call-icon {
-    height: 10rem;
-    width: 9rem;
-    margin-top: 7rem;
-    margin-left: -1.5rem;
+    height: 8.5rem;
+    width: 8rem;
+    margin-top: 19rem;
+    margin-left: 29.3rem;
   }
   .dial {
-    margin-top: 8.3rem;
-    font-size: 5rem;
+    margin-top: 19.3rem;
+    font-size: 4.4rem;
+    margin-left: -1rem;
   }
   .footer {
-    bottom: -20.7rem;
-    width: 92.9rem;
-    position: absolute;
+    bottom: -3.6rem;
+    width: 100vw;
     height: 6rem;
   }
   .icon {
@@ -412,6 +432,14 @@ label {
   }
   ul {
     margin-left: 28rem;
+  }
+  .body {
+    background-position: -46rem;
+  }
+}
+@media screen and (min-width: 32rem) and (max-width: 37.5rem) {
+  .book-now {
+    margin-right: -3rem;
   }
 }
 
